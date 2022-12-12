@@ -1,0 +1,11 @@
+.card{
+    background-color: var(--card-color);
+    margin: 2rem auto;
+    width: 375px;
+    max-width: 90%;
+    border-radius: 5%;
+}
+
+.card__details{
+    padding: 2rem;
+}
