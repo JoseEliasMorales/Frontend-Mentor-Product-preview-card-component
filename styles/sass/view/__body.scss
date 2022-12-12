@@ -1,5 +1,6 @@
 body{
     background-color: var(--background-color);
+    padding: 7rem 9rem;
 }
 
 .card__detailsPreview{
@@ -65,4 +66,29 @@ body{
 
 .btn:active{
     background-color: var(--active-color);
+}
+
+@media screen and (min-width:992px){
+
+    .card__detailsPreview{
+        padding-bottom: 2rem;
+    }
+
+    .card__detailsTitle{
+        line-height: 2rem;
+    }
+
+    .card__detailsPrice{
+        padding-bottom: 2rem;
+    }
+
+    .card__detailsPriceNow{
+        font-size: 32px;   
+    }
+
+    .card__detailsParagraph{
+        letter-spacing: 0;
+    }
+    
+    
 }

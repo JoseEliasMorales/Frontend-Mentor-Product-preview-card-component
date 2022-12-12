@@ -1,4 +1,20 @@
-.card__image{
-    background-image: url(../images/image-product-mobile.jpg);
+.card__imageMobile{
     width: 100%;
+    border-radius: 5% 5% 0 0;
+}
+
+.card__imageDesktop{
+    display: none;
+}
+
+@media screen and (min-width:992px){
+    .card__imageMobile{
+        display: none;
+    }
+
+    .card__imageDesktop{
+        display: block;
+        max-width: 50%;
+        border-radius: 5% 0 0 5%;
+    }
 }
