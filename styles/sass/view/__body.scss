@@ -1,4 +1,4 @@
-body{
+main{
     background-color: var(--background-color);
     padding: 7rem 9rem;
 }
@@ -66,6 +66,10 @@ body{
 
 .btn:active{
     background-color: var(--active-color);
+}
+
+.attribution{
+    text-align: center;
 }
 
 @media screen and (min-width:992px){
