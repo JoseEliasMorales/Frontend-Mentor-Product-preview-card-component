@@ -46,9 +46,13 @@
     align-items: center;
   }
 }
-main {
+body {
   background-color: var(--background-color);
-  padding: 7rem 9rem;
+}
+
+main {
+  margin: 0 auto;
+  padding: 3rem auto;
 }
 
 .card__detailsPreview {
@@ -120,6 +124,9 @@ main {
 }
 
 @media screen and (min-width: 992px) {
+  main {
+    margin: 5rem auto;
+  }
   .card__detailsPreview {
     padding-bottom: 2rem;
   }
