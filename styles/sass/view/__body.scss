@@ -43,11 +43,19 @@ main{
     padding-right: 1rem;
 }
 
+.sr-only{
+    font-family: Montserrat, sans-serif;
+    color: var(--paraf-color);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
 .card__detailsPreviousPrice{
     font-family: Montserrat, sans-serif;
     text-decoration:line-through;
     font-size: 14px;
-    color: var(--paraf-color);
+    opacity: 0;
 }
 
 
@@ -82,16 +90,15 @@ main{
         margin:  5rem auto;
     }
     
-    .card__detailsPreview{
-        padding-bottom: 2rem;
-    }
 
     .card__detailsTitle{
         line-height: 2rem;
+        padding-bottom: 2rem;
     }
 
     .card__detailsPrice{
-        padding-bottom: 2rem;
+        height: 3rem;
+        padding-bottom: 1rem;
     }
 
     .card__detailsPriceNow{

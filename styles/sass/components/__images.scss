@@ -1,20 +1,20 @@
-.card__imageMobile{
+.card__image{
     width: 100%;
     border-radius: 5% 5% 0 0;
 }
 
-.card__imageDesktop{
-    display: none;
-}
-
 @media screen and (min-width:992px){
-    .card__imageMobile{
-        display: none;
+
+    picture{
+        min-width: 50%;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .card__imageDesktop{
-        display: block;
-        max-width: 50%;
+    .card__image{
+        
         border-radius: 5% 0 0 5%;
     }
 }

@@ -8,22 +8,20 @@
   --card-color:hsl(0,0%,100%);
 }
 
-.card__imageMobile {
+.card__image {
   width: 100%;
   border-radius: 5% 5% 0 0;
 }
 
-.card__imageDesktop {
-  display: none;
-}
-
 @media screen and (min-width: 992px) {
-  .card__imageMobile {
-    display: none;
-  }
-  .card__imageDesktop {
-    display: block;
+  picture {
+    min-width: 50%;
     max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card__image {
     border-radius: 5% 0 0 5%;
   }
 }
@@ -44,6 +42,11 @@
     width: 600px;
     display: flex;
     align-items: center;
+  }
+  .card__details {
+    width: 50%;
+    padding: 0 2rem;
+    box-sizing: border-box;
   }
 }
 body {
@@ -91,11 +94,19 @@ main {
   padding-right: 1rem;
 }
 
+.sr-only {
+  font-family: Montserrat, sans-serif;
+  color: var(--paraf-color);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
 .card__detailsPreviousPrice {
   font-family: Montserrat, sans-serif;
   text-decoration: line-through;
   font-size: 14px;
-  color: var(--paraf-color);
+  opacity: 0;
 }
 
 .btn {
@@ -127,14 +138,13 @@ main {
   main {
     margin: 5rem auto;
   }
-  .card__detailsPreview {
-    padding-bottom: 2rem;
-  }
   .card__detailsTitle {
     line-height: 2rem;
+    padding-bottom: 2rem;
   }
   .card__detailsPrice {
-    padding-bottom: 2rem;
+    height: 3rem;
+    padding-bottom: 1rem;
   }
   .card__detailsPriceNow {
     font-size: 32px;
